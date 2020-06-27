@@ -1,3 +1,123 @@
+# What is Web Scraping? 
+Web Scraping is the act of parsing a web page's HTML and pulling or 
+scrapping pertinent data from that HTML. 
+
+# What is Open-URI? 
+Open-URI is a module in Ruby that allows us to programmatically make HTTP requests. 
+
+This method takes one argument, a URL and it will return the HTML content of that URL 
+
+html = open('http://www.google.com') 
+
+# What is Nokogiri? 
+Nokogiri is a Ruby gem that helps us parse HTML and collect data from it. 
+It allows us to treat a huge string of HTML as if it were a series of nested objects that you can use to 
+extract the desired information using provided methods. 
+Nokogiri takes in HTML and gives us a collection of objects that we can get information from. 
+
+gem install nokogiri 
+
+require 'nokogiri'
+require 'open-uri'
+
+# HTML Method 
+This method takes the string of HTML returned by open-uri's open method and 
+converts it into a NodeSet(nested nodes) 
+
+doc = Nokogiri::HTML(html) 
+
+We have saved the HTML document in a variable doc so we can operate on it. 
+
+# Nested Nodes 
+Nested Nodes refers to any tree of elements in which parent elements branch off to contain children elements. 
+This is similar to structures like hashes. By creating a nested structure, Nokogiri allows us to do things like 
+iterate over a collection of elements from the HTML document and use brackets and dot notation to access elements 
+within the nested structure. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # Scraping HTML with Nokogiri
 
 ## Learning Goals
